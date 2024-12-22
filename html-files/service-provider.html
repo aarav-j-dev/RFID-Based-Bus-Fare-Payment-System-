@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--In this file, the css has been mentioned with suitable codes to identify them easily for external linking-->
+    <head>
+        <title>
+            EasyGO
+        </title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="login" content="login form">
+        <!--border full resolutions-->
+        <style type="text/css">
+            *
+            {
+                margin: 0px auto;
+            }
+            a:link {color:rgb(255, 255, 255);}
+            a:visited{color:rgb(255, 255, 255);}
+            a:hover{color:rgb(198, 172, 106)}
+            body{background-color:#ffffff}
+        </style>
+        <!--linking an external css file-->
+        <link rel="stylesheet" href="../css files/style.css"/>
+       
+    </head>
+    <body>
+        <header>
+         
+            <!--header001 section-->
+            <div class="header001"> 
+                    
+                <div class="header002">
+                    <a href="home.html" >
+                        <img src="../images/logo.png" alt="logo" height="80px" width="300px"/> 
+                    </a>
+                     
+                    <a href="registration.html">
+                        <div class="header002and1">
+                            Register
+                        </div>
+                    </a>
+                    <a href="login.html">
+                        <div class="header002and2">
+                            Login 
+                        </div>  
+                    </a>  
+                </div> 
+            </div>
+            
+           
+            <!--header002 section-->
+            <nav>
+                <a href="user.html">
+                    <div class="navigation001" >
+                        Profile
+                    </div>
+                </a>
+                <a href="live-view.html">
+                    <div class="navigation002">
+                        Live-View 
+                    </div>
+                </a>
+                <a href="top-up.html">
+                    <div class="navigation002">
+                        Top-Up 
+                    </div>
+                </a>
+            </nav>
+        </header>
+        <!--using image as a background-->
+        <div style="background-image: url(../images/sample.jpg); height:450px;width:100%; background-repeat: no-repeat;padding-top:100px; padding-bottom: 100px; background-attachment: fixed;">
+            <div style="margin-top: 30px; margin-left: 700px;height: 50px; width: 700px;">
+                <form id="search">
+                    <select name="ID" id="ID" style="height: 35px;">
+                        <option value="CardID">CardID</option>
+                        <option value="Contact">Contact</option>
+                        <option value="Email">Email</option>
+                        <option value="Name">Name</option>
+                    </select>
+                    <input type="text" name="search" placeholder="Search here" style="width: 400px; height: 30px;">
+                    <button type="submit" style="background-color: #063c04; color: #ffffff;height: 35px;">SEARCH</button>
+                </form>
+            </div>
+            
+            <div style="height: 350px; margin-top: 10px; margin-left: 170px; width: 400px; float: left; padding-top: 40px; padding-left: 50px; background-color: #32333D; opacity: 80%;">
+                
+                    <div style="margin-left: 130px; height:40px; width: 300px; opacity: 100%; color:#FFF; font-family: 'Times New Roman', Times, serif; font-size: 20px;font-weight: 300;">
+                        USER-INFO
+                    </div>
+                    <p style="color: #FFF; margin-left: 30px;">Name: 
+                    <input type="text" name="name" style="margin-left: 48px;margin-top: 20px;">
+                    <br>
+                    <br>
+                    Contact:
+                    <input type="text" name="contact" style="margin-left: 38px;">
+                    <br>
+                    <br>
+                    
+                    Email:
+                    <input type="text" name="email" style="margin-left: 48px;">
+                    <br>
+                    <br>
+                    Card ID:
+                    <input type="text" name="cardid" style="margin-left: 35px;">
+                    <br>
+                    <br>
+                    Card Status:
+                    <input type="text" name="cardstatus" style="margin-left: 12px;">
+                    <br>
+                    <br>
+                    Card Balance:
+                    <input type="text" name="cardbalance">
+                    <br>
+                    <br>
+                    </p>
+                    <input type="submit" value="BLOCK | UNBLOCK CARD" style="margin-left:120px; background-color: #5f0707; color:#FFF">
+                </div>
+                <div style="height: 350px;margin-top: 10px; margin-right: 170px; width: 600px;float: right; margin: top 50px;  padding-top: 40px; padding-left: 50px; background-color: #32333D; opacity: 80%;">
+                    <div style="margin-left: 180px; height:40px; width: 300px; opacity: 100%; color:#FFF; font-family: 'Times New Roman', Times, serif; font-size: 20px;font-weight: 300;">
+                        TRAVEL HISTORY
+                    </div>
+                    <form name="user_history" onsubmit="validateForm()">
+                    <div style="float: left; width: 600px;">
+                    <p style="color: #FFF; margin-left: 30px;">Start Date: 
+                        <input type="datetime-local" name="startdate" style="margin-left: 48px;margin-top: 20px;">
+                        <br>
+                        </p>
+                        <div style="float: right;">
+                            <input type="submit" value="SEARCH" style=" background-color: #063c04; color:#FFF; margin-right: 150px; height: 30px;">
+                        </div>
+                        <p style="color: #FFF; margin-left: 30px;">End Date:
+                        <input type="datetime-local" name="enddate" style="margin-left: 52px;margin-top: 20px;">
+                        <br>
+                        <br>
+                        </p>
+                    </form>
+                    <script>
+                        function validateForm()
+                        {
+                            var startdate = document.forms["user_history"]["startdate"].value;
+                            var enddate = document.forms["user_history"]["enddate"].value;
+                            /* The empty values are being checked */
+                            if (startdate == "" || enddate == "")
+                            {
+                                alert("Empty fields are present!!! Please check and enter the required values and try again!!!");
+                
+                            }   
+                            else
+                            {
+                                alert("Thank you for your details!!! We will fetch details in a few moments!!!")
+                            }
+                        }
+                    </script>
+                    </div>
+                        <input type="text" name="details" style="margin-left: 30px;margin-top: 20px; height: 150px; width: 450px;">
+
+                </div>
+            </div>
+        <!--footer section-->
+        <footer style="width:100%; height:70px;  background-color:#32333D; clear:both; ">
+            <div class="footer001">
+                CONTACT US:
+            </div>
+            <div>
+                <p class="footer002">
+                    <a href="https://www.gmail.com" target="_blank">
+                        <img src="../images/mail.png" height="10px" width="20px" alt="mail"/> 
+                        easygo.nepal@gmail.com 
+                    </a>
+                    <br>
+                    <a href="https://www.viber.com" target="_blank">
+                        <img src="../images/phone1.png" height="10px" width="20px" alt="phone"/> 
+                        +977 9818000000
+                    </a>
+                </p>
+          
+            </div>
+            <div style="padding-top: 20px;">
+                <div class="footer001and1">
+                    <a href="https://facebook.com" target="_blank">
+                    <img src="../images/facebook.png" alt="facebook" height="15px" width="20px"/>
+                    </a>
+                </div>
+                <div class="footer001and2">
+                    <a href="https://instagram.com" target="_blank">
+                    <img src="../images/instagram.png" alt="instagram" height="15px" width="20px"/>
+                    </a>
+                </div>
+                <div class="footer001and2">
+                    <a href="https://twitter.com" target="_blank">
+                    <img src="../images/twitter.png" alt="twitter" height="15px" width="20px"/>
+                    </a>
+                </div>
+                <div class="footer001and4">
+                    Follow US On:
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
