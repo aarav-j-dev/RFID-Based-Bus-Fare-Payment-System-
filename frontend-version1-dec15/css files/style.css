@@ -1,0 +1,140 @@
+/*The CSS listings are done in this format:
+*/
+/* CSS for Header Semantic Starts in all pages*/
+/* A css for top header black background creates a black box for short links and news updates */
+/* header 001 section css */
+/* number 1 */
+.header001
+{
+    background-color:black;
+    width:100%;
+    height:120px;
+}
+
+
+
+/* header002 section css */
+.header002
+{
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+
+.header002and1
+{
+   
+    float:right; 
+    height:30px; 
+    width:80px;
+    margin-right: 50px; 
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 20px; 
+    font-weight: 300; 
+    text-align: center;
+    padding-top: 5px;
+}
+
+.header002and2
+{
+   
+    float:right; 
+    height:30px; 
+    width:80px;
+    margin-right: 2px; 
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 20px; 
+    font-weight: 300; 
+    text-align: center;
+    padding-top: 5px;
+}
+
+/* navigation css */
+
+
+.navigation001
+{
+    float:left;
+    height:30px; 
+    width:120px; 
+    text-align: center; 
+    padding-top: 10px; 
+    background-color: #797573; 
+    margin-right:40px; 
+    margin-left:500px; 
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 20px; 
+    font-weight: 300;
+}
+
+.navigation002
+{
+    float:left;
+    height:30px;
+    width:120px;
+    padding-top: 10px; 
+    text-align: center; 
+    background-color: #797573; 
+    margin-right:40px; 
+    margin-left:150px; 
+    margin-left:40px; 
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 20px; 
+    font-weight: 300;
+}
+/* navigation css ends */
+/* header css ends */
+
+.profile1
+{
+    float: left;
+    margin-top: 100px;
+    margin-left: 100px;
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 20px; 
+    font-weight: 300;
+
+}
+/* footer css number 2*/
+
+.footer001
+{
+    float:left; 
+    margin:23px 10px 0px 30px;
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 20px; 
+    color:#8c8888
+}
+
+.footer002
+{
+    float: left;
+    margin:20px 10px 0px 20px;
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 15px; 
+    color:#FFF
+}
+
+.footer001and1
+{
+    float:right;
+    margin:10px 50px 0px 10px;
+}
+
+.footer001and2
+{
+    float:right;
+    margin:10px 10px 0px 10px;
+}   
+
+.footer001and4
+{
+    float:right;
+    color: rgb(255, 255, 255);
+    margin:10px 10px 0px 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
