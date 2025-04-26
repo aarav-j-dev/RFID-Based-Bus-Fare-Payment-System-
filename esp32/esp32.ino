@@ -100,7 +100,6 @@ void loop() {
     lcd.print(uid.substring(0, 10));
     delay(1000);
 
-    // ✅ Now send the correct action
     HTTPClient authHttp;
     authHttp.begin(serverURL);
     authHttp.addHeader("Content-Type", "application/x-www-form-urlencoded");
