@@ -10,8 +10,8 @@
 
 const char* ssid = "ARV";
 const char* password = "11111111";
-const char* serverURL = "http://34.204.229.70/easygo/api/rfid-auth.php";
-const char* statusCheckURL = "http://34.204.229.70/easygo/api/check-last-action.php";
+const char* serverURL = "http://*/easygo/api/rfid-auth.php";
+const char* statusCheckURL = "http://*/easygo/api/check-last-action.php";
 
 HardwareSerial GPS(2);
 TinyGPSPlus gps;
